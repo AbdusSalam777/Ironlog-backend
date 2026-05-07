@@ -18,7 +18,7 @@ router.get("/", authMiddleware, async (req, res) => {
     }
 });
 
-// POST /api/weight - Log daily weight
+// POST /api/weight - Log daily weight - insert data into database
 router.post("/", authMiddleware, async (req, res) => {
     const { weight, log_date } = req.body;
     try {
